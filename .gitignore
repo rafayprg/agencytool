@@ -1,0 +1,11 @@
+.venv/
+.venv-*/
+jobs/
+data/
+inbox/
+studio/node_modules/
+studio/out/
+__pycache__/
+*.pyc
+.pytest_cache/
+tools/

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Media Agency Studio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23ffb547'/><rect x='11' y='6' width='10' height='20' rx='2.5' fill='%2314110d'/></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <strong>Media Agency Studio</strong>
+        <small>remake phone tutorials in any language</small>
+      </div>
+    </div>
+    <nav class="tabs" aria-label="Main">
+      <button class="tab" data-page="create">New video</button>
+      <button class="tab" data-page="projects">Projects <span id="running-count" class="count" hidden></span></button>
+      <button class="tab" data-page="autopilot">Autopilot <span id="ap-dot" class="ap-dot" hidden></span></button>
+      <button class="tab" data-page="styles">Editing styles</button>
+      <button class="tab" data-page="settings">Settings</button>
+    </nav>
+    <div id="engine-pill" class="pill" title="Translation engine"></div>
+  </header>
+
+  <main>
+    <!-- ================= CREATE ================= -->
+    <section id="page-create" class="page">
+      <div class="page-head">
+        <h1>Make a new video</h1>
+        <p>Paste a link or upload a recording. The agents download it, cut out the phone screen, transcribe, translate, record the new voice and edit it in your style.</p>
+      </div>
+
+      <form id="create-form" class="steps" autocomplete="off">
+        <article class="step">
+          <header><span class="num">1</span><div><h2>Source video</h2><p>YouTube video, playlist or channel · public Google Drive folder · or a file from your PC</p></div></header>
+          <div class="seg" role="tablist">
+            <button type="button" class="seg-btn active" data-src="link">Paste link</button>
+            <button type="button" class="seg-btn" data-src="upload">Upload file</button>
+          </div>
+          <div data-src-panel="link">
+            <input id="src-url" type="url" placeholder="https://www.youtube.com/watch?v=…  or a playlist / channel / Drive folder link" />
+            <p class="hint">A playlist, channel or Drive folder turns into one project per video (bulk mode).</p>
+          </div>
+          <div data-src-panel="upload" hidden>
+            <label id="dropzone" class="dropzone">
+              <input id="src-file" type="file" accept="video/*,.mkv" hidden />
+              <span class="drop-icon" aria-hidden="true">⬆</span>
+              <span id="drop-text"><b>Drop a video here</b> or click to choose (mp4, mov, mkv, webm)</span>
+            </label>
+          </div>
+        </article>
+
+        <article class="step">
+          <header><span class="num">2</span><div><h2>Language &amp; voice</h2><p>The original speech is translated (not rewritten) and voiced in this language.</p></div></header>
+          <div class="row">
+            <label class="field"><span>Target language</span><select id="lang"></select></label>
+            <label class="field grow"><span>Speaking speed <b id="rate-label">+6%</b></span>
+              <input id="rate" type="range" min="-20" max="30" step="2" value="6" /></label>
+          </div>
+          <div id="voice-list" class="voice-list" role="radiogroup" aria-label="Voice"></div>
+          <div class="field"><span>Also make this video in (same download &amp; transcript, default voice for each)</span>
+            <div id="extra-langs" class="lang-chips"></div></div>
+        </article>
+
+        <article class="step">
+          <header><span class="num">3</span><div><h2>Editing style</h2><p>Pick a look, or make one from a reference image / video frame.</p></div></header>
+          <div id="style-picker" class="style-grid"></div>
+        </article>
+
+        <article class="step">
+          <header><span class="num">4</span><div><h2>Output</h2><p>What you get back at the end.</p></div></header>
+          <div class="row wrap">
+            <label class="check"><input type="checkbox" name="fmt" value="16x9" checked /> <span>YouTube 16:9</span></label>
+            <label class="check"><input type="checkbox" name="fmt" value="9x16" checked /> <span>Shorts / Reels 9:16</span></label>
+            <label class="check"><input id="review" type="checkbox" checked /> <span>Let me check the translated script before the voice is recorded</span></label>
+          </div>
+          <details class="advanced">
+            <summary>Advanced</summary>
+            <label class="field"><span>Phone crop override (W:H:X:Y in source pixels) — leave empty for auto-detect</span>
+              <input id="crop" type="text" placeholder="e.g. 460:1044:1235:18" pattern="^\d+:\d+:\d+:\d+$" /></label>
+            <label class="check"><input id="allow-dup" type="checkbox" /> <span>Make it again even if this video was already made</span></label>
+          </details>
+        </article>
+
+        <div class="submit-bar">
+          <p id="create-error" class="error" role="alert"></p>
+          <button id="create-btn" class="btn primary big" type="submit">Start the agents →</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="page-projects" class="page" hidden>
+      <div class="page-head row between">
+        <div><h1>Projects</h1><p>Every video and what each agent is doing right now.</p></div>
+      </div>
+      <div id="job-list" class="job-list"></div>
+      <p id="jobs-empty" class="empty" hidden>No projects yet — start one from <a href="#create">New video</a>.</p>
+    </section>
+
+    <!-- ================= JOB DETAIL ================= -->
+    <section id="page-job" class="page" hidden>
+      <a href="#projects" class="back">← All projects</a>
+      <div id="job-detail"></div>
+    </section>
+
+    <!-- ================= AUTOPILOT ================= -->
+    <section id="page-autopilot" class="page" hidden>
+      <div class="page-head">
+        <h1>Autopilot</h1>
+        <p>Point it at the folder your downloader fills. Every finished video is picked up and made automatically, day and night, while this PC and the studio stay on. Original files are only copied, never moved or deleted.</p>
+      </div>
+      <div class="card ap-status">
+        <div class="ap-head">
+          <div><span id="ap-state" class="status">off</span> <span id="ap-scan" class="hint"></span></div>
+          <div class="row wrap">
+            <button id="ap-scan-now" class="btn small" type="button">Scan now</button>
+            <button id="ap-toggle" class="btn primary" type="button">Start autopilot</button>
+          </div>
+        </div>
+        <p id="ap-error" class="error"></p>
+        <div class="ap-counts" id="ap-counts"></div>
+      </div>
+
+      <form id="ap-form" class="card settings" autocomplete="off">
+        <h3>Folders</h3>
+        <label class="field"><span>Watched folder (where your downloader saves videos)</span>
+          <input id="ap-watch" type="text" placeholder="D:\Downloads\channel-videos" /></label>
+        <label class="field"><span>Output folder (optional — finished videos + captions + upload text are copied here)</span>
+          <input id="ap-output" type="text" placeholder="D:\Remakes\ready-to-upload" /></label>
+        <label class="check"><input id="ap-sub" type="checkbox" /> <span>Also look inside subfolders</span></label>
+
+        <h3>How every video is made</h3>
+        <div class="row wrap">
+          <label class="field"><span>Language</span><select id="ap-lang"></select></label>
+          <label class="field"><span>Editing style</span><select id="ap-style"></select></label>
+          <label class="field grow"><span>Speaking speed <b id="ap-rate-l">+6%</b></span><input id="ap-rate" type="range" min="-20" max="30" step="2" value="6" /></label>
+        </div>
+        <div id="ap-voices" class="voice-list" role="radiogroup" aria-label="Voice"></div>
+        <div class="row wrap">
+          <label class="check"><input type="checkbox" name="ap-fmt" value="16x9" /> <span>YouTube 16:9</span></label>
+          <label class="check"><input type="checkbox" name="ap-fmt" value="9x16" /> <span>Shorts / Reels 9:16</span></label>
+        </div>
+        <div class="field"><span>Also make every video in</span><div id="ap-extra" class="lang-chips"></div></div>
+
+        <h3>Pace</h3>
+        <div class="row wrap">
+          <label class="field"><span>Videos in progress at once</span><input id="ap-max" type="number" min="1" max="10" /></label>
+          <label class="field"><span>Wait until a file is untouched for (seconds)</span><input id="ap-age" type="number" min="10" max="3600" /></label>
+          <label class="field"><span>Pause when free disk space is below (GB)</span><input id="ap-free" type="number" min="1" max="2000" /></label>
+        </div>
+        <label class="check"><input id="ap-cleanup" type="checkbox" /> <span>Disk saver: after each video, delete working files (keeps the finished package; with an output folder only that copy is kept)</span></label>
+        <p class="hint">Autopilot never pauses for script review. Translations use Gemini if a key is set in Settings, otherwise the free translators (MyMemory: ~5,000 characters a day without an email).</p>
+        <div class="submit-bar"><p id="ap-msg" class="hint"></p><button class="btn primary" type="submit">Save autopilot settings</button></div>
+      </form>
+
+      <div class="panel">
+        <h2>Picked up files</h2>
+        <div id="ap-recent" class="job-list"></div>
+        <p id="ap-empty" class="empty" hidden>Nothing picked up yet.</p>
+      </div>
+
+      <div class="panel">
+        <div class="row between wrap"><h2>Library — every video already made</h2>
+          <a class="btn small" href="/api/library.csv" download>Download list (Excel/CSV)</a></div>
+        <p class="hint">A video in this list is never made again (same YouTube id or same file), by Autopilot or by hand — unless you tick "make it again" on New video.</p>
+        <div class="row wrap">
+          <input id="lib-q" type="text" placeholder="Search by name or link" />
+          <select id="lib-status" style="max-width:200px">
+            <option value="">All</option><option value="done">Ready</option><option value="running">Working</option>
+            <option value="queued">Queued</option><option value="error">Failed</option><option value="deleted">Deleted</option>
+          </select>
+        </div>
+        <p id="lib-total" class="hint"></p>
+        <div id="lib-rows" class="job-list"></div>
+      </div>
+    </section>
+
+    <!-- ================= STYLES ================= -->
+    <section id="page-styles" class="page" hidden>
+      <div class="page-head"><h1>Editing styles</h1><p>Colours, font, layout and music used by the Video Editor agent. Changes apply to the next render.</p></div>
+      <div class="styles-layout">
+        <div>
+          <div id="style-list" class="style-grid"></div>
+          <form id="ref-form" class="card ref-card">
+            <h3>New style from a reference</h3>
+            <p class="hint">Upload a frame or short clip of an edit you like. Colours are read locally; with a Gemini key the mood and font are matched too.</p>
+            <div class="row wrap">
+              <input id="ref-name" type="text" placeholder="Style name" maxlength="40" />
+              <input id="ref-file" type="file" accept="image/*,video/*" />
+              <button class="btn" type="submit">Create style</button>
+            </div>
+            <p id="ref-msg" class="hint"></p>
+          </form>
+        </div>
+        <form id="style-editor" class="card editor" hidden></form>
+      </div>
+    </section>
+
+    <!-- ================= SETTINGS ================= -->
+    <section id="page-settings" class="page" hidden>
+      <div class="page-head"><h1>Settings</h1><p>Stored only on this PC (data/settings.json).</p></div>
+      <form id="settings-form" class="card settings">
+        <h3>Speed (this PC)</h3>
+        <div class="row wrap">
+          <label class="field grow"><span>Pipeline — videos prepared while one renders <b id="set-ahead-l">2</b></span>
+            <input id="set-ahead" type="range" min="0" max="10" step="1" value="2" /></label>
+          <label class="field"><span>Transcription device</span>
+            <select id="set-device">
+              <option value="auto">Auto — graphics card if ready, else CPU</option>
+              <option value="gpu">Graphics card only</option>
+              <option value="cpu">CPU only</option>
+            </select></label>
+        </div>
+        <p class="hint">0 = one video at a time. 2–3 is best on most PCs: downloads, transcripts, translations and voices of the next videos are ready when the editor finishes. For the graphics card run <code>setup-gpu.bat</code> once.</p>
+        <label class="check"><input id="set-cleanup" type="checkbox" /> <span>Disk saver: delete working files of finished projects made by hand (the finished videos stay)</span></label>
+
+        <h3>Telegram messages (optional)</h3>
+        <p class="hint">Get a message on your phone for every finished or failed video. Create a bot with <b>@BotFather</b> (copy its token), send it any message, then get your chat id from <b>@userinfobot</b>.</p>
+        <div class="row wrap">
+          <label class="field grow"><span>Bot token</span><input id="set-tg-token" type="password" placeholder="123456:ABC…" /></label>
+          <label class="field"><span>Chat id</span><input id="set-tg-chat" type="text" placeholder="123456789" /></label>
+          <button id="test-tg" class="btn" type="button">Send test</button>
+        </div>
+        <div class="row wrap">
+          <label class="check"><input id="set-tg-done" type="checkbox" /> <span>Video ready</span></label>
+          <label class="check"><input id="set-tg-err" type="checkbox" /> <span>Video failed / Autopilot paused</span></label>
+        </div>
+        <p id="tg-msg" class="hint"></p>
+
+        <h3>Two PCs</h3>
+        <label class="field"><span>Shared library folder — the same network folder on both PCs, so a video made on one PC is never made on the other (leave empty for one PC)</span>
+          <input id="set-libdir" type="text" placeholder="\\WHITE-PC\studio-shared" /></label>
+
+        <h3>Translation engine</h3>
+        <label class="field"><span>Which engine translates the script</span>
+          <select id="set-translator">
+            <option value="auto">Auto — Groq, then Gemini, then the free translators</option>
+            <option value="groq">Groq only (falls back to free if it fails)</option>
+            <option value="gemini">Gemini only (falls back to free if it fails)</option>
+            <option value="free">Free translators only (Google web / MyMemory)</option>
+          </select></label>
+
+        <h3>Groq (optional, free)</h3>
+        <p class="hint">Very fast, good translations. Free key from
+          <a href="https://console.groq.com/keys" target="_blank" rel="noopener noreferrer">console.groq.com/keys</a>.
+          The best available model is picked automatically when you save.</p>
+        <div class="row wrap">
+          <label class="field grow"><span>Groq API key</span><input id="set-groq-key" type="password" placeholder="gsk_…" /></label>
+          <label class="field"><span>Model</span><select id="set-groq-model"></select></label>
+          <button id="test-groq" class="btn" type="button">Test key</button>
+        </div>
+        <p id="groq-msg" class="hint"></p>
+
+        <h3>Google AI Studio (optional, free)</h3>
+        <p class="hint">Without a key the free Google/MyMemory translators are used. With a free key from
+          <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">aistudio.google.com/apikey</a>
+          translations sound natural, step headings get written, and reference styles are matched better.</p>
+        <div class="row wrap">
+          <label class="field grow"><span>Gemini API key</span><input id="set-key" type="password" placeholder="AIza…" /></label>
+          <label class="field"><span>Model</span><select id="set-model"></select></label>
+          <button id="test-key" class="btn" type="button">Test key</button>
+        </div>
+        <p id="key-msg" class="hint"></p>
+
+        <h3>Free translator</h3>
+        <label class="field"><span>Email for MyMemory (optional — raises the free daily limit from 5k to 50k characters)</span>
+          <input id="set-email" type="email" placeholder="you@example.com" /></label>
+
+        <h3>Transcription</h3>
+        <label class="field"><span>Whisper model (runs on this PC)</span>
+          <select id="set-whisper">
+            <option value="tiny">tiny — fastest, rough</option>
+            <option value="base">base — fast</option>
+            <option value="small">small — balanced (recommended)</option>
+            <option value="medium">medium — slow, most accurate</option>
+          </select></label>
+
+        <h3>Defaults for new videos</h3>
+        <div class="row wrap">
+          <label class="field"><span>Language</span><select id="set-lang"></select></label>
+          <label class="field"><span>Style</span><select id="set-style"></select></label>
+          <label class="check"><input id="set-review" type="checkbox" /> <span>Pause for script review</span></label>
+        </div>
+        <div class="submit-bar"><p id="settings-msg" class="hint"></p><button class="btn primary" type="submit">Save settings</button></div>
+      </form>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

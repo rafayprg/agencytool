@@ -1,0 +1,1472 @@
+{
+ "title": "Cómo ver todas tus contraseñas guardadas en Google",
+ "fps": 30,
+ "total": 3122,
+ "scenes": [
+  {
+   "id": 1,
+   "src": [
+    0,
+    22
+   ],
+   "chapter": "Tus contraseñas de Google",
+   "sub": "Todas en un solo lugar",
+   "callout": "",
+   "text": "¿Sabías que Google guarda todas las contraseñas que usas en tu teléfono? Hoy te enseño dónde verlas y cómo gestionarlas, paso a paso.",
+   "audio": "vo/vo_01.mp3",
+   "from": 0,
+   "frames": 274,
+   "voiceSec": 8.78,
+   "words": [
+    {
+     "w": "Sabías",
+     "s": 0.097,
+     "e": 0.592
+    },
+    {
+     "w": "que",
+     "s": 0.604,
+     "e": 0.71
+    },
+    {
+     "w": "Google",
+     "s": 0.722,
+     "e": 1.017
+    },
+    {
+     "w": "guarda",
+     "s": 1.029,
+     "e": 1.347
+    },
+    {
+     "w": "todas",
+     "s": 1.359,
+     "e": 1.725
+    },
+    {
+     "w": "las",
+     "s": 1.736,
+     "e": 1.866
+    },
+    {
+     "w": "contraseñas",
+     "s": 1.878,
+     "e": 2.503
+    },
+    {
+     "w": "que",
+     "s": 2.515,
+     "e": 2.644
+    },
+    {
+     "w": "usas",
+     "s": 2.656,
+     "e": 2.975
+    },
+    {
+     "w": "en",
+     "s": 2.986,
+     "e": 3.081
+    },
+    {
+     "w": "tu",
+     "s": 3.092,
+     "e": 3.199
+    },
+    {
+     "w": "teléfono",
+     "s": 3.21,
+     "e": 3.741
+    },
+    {
+     "w": "Hoy",
+     "s": 4.552,
+     "e": 4.729
+    },
+    {
+     "w": "te",
+     "s": 4.741,
+     "e": 4.823
+    },
+    {
+     "w": "enseño",
+     "s": 4.835,
+     "e": 5.248
+    },
+    {
+     "w": "dónde",
+     "s": 5.259,
+     "e": 5.483
+    },
+    {
+     "w": "verlas",
+     "s": 5.495,
+     "e": 5.908
+    },
+    {
+     "w": "y",
+     "s": 5.92,
+     "e": 5.979
+    },
+    {
+     "w": "cómo",
+     "s": 5.991,
+     "e": 6.226
+    },
+    {
+     "w": "gestionarlas",
+     "s": 6.238,
+     "e": 6.981
+    },
+    {
+     "w": "paso",
+     "s": 7.205,
+     "e": 7.488
+    },
+    {
+     "w": "a",
+     "s": 7.5,
+     "e": 7.547
+    },
+    {
+     "w": "paso",
+     "s": 7.559,
+     "e": 7.948
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "src": [
+    23,
+    30
+   ],
+   "chapter": "Paso 1",
+   "sub": "Abre el gestor",
+   "callout": "Abre Chrome",
+   "text": "Primero, abre Google Chrome en tu teléfono.",
+   "audio": "vo/vo_02.mp3",
+   "from": 274,
+   "frames": 107,
+   "voiceSec": 3.22,
+   "words": [
+    {
+     "w": "Primero",
+     "s": 0.097,
+     "e": 0.557
+    },
+    {
+     "w": "abre",
+     "s": 0.793,
+     "e": 1.041
+    },
+    {
+     "w": "Google",
+     "s": 1.052,
+     "e": 1.371
+    },
+    {
+     "w": "Chrome",
+     "s": 1.383,
+     "e": 1.607
+    },
+    {
+     "w": "en",
+     "s": 1.618,
+     "e": 1.713
+    },
+    {
+     "w": "tu",
+     "s": 1.725,
+     "e": 1.831
+    },
+    {
+     "w": "teléfono",
+     "s": 1.842,
+     "e": 2.385
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "src": [
+    30,
+    43
+   ],
+   "chapter": "Paso 1",
+   "sub": "Abre el gestor",
+   "callout": "Tu foto de perfil",
+   "text": "Arriba a la derecha, toca tu foto de perfil.",
+   "audio": "vo/vo_03.mp3",
+   "from": 381,
+   "frames": 116,
+   "voiceSec": 3.53,
+   "words": [
+    {
+     "w": "Arriba",
+     "s": 0.097,
+     "e": 0.533
+    },
+    {
+     "w": "a",
+     "s": 0.545,
+     "e": 0.569
+    },
+    {
+     "w": "la",
+     "s": 0.581,
+     "e": 0.663
+    },
+    {
+     "w": "derecha",
+     "s": 0.675,
+     "e": 1.123
+    },
+    {
+     "w": "toca",
+     "s": 1.383,
+     "e": 1.654
+    },
+    {
+     "w": "tu",
+     "s": 1.666,
+     "e": 1.795
+    },
+    {
+     "w": "foto",
+     "s": 1.807,
+     "e": 2.102
+    },
+    {
+     "w": "de",
+     "s": 2.114,
+     "e": 2.22
+    },
+    {
+     "w": "perfil",
+     "s": 2.232,
+     "e": 2.691
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "src": [
+    43,
+    48
+   ],
+   "chapter": "Paso 1",
+   "sub": "Abre el gestor",
+   "callout": "Gestionar tu cuenta de Google",
+   "text": "En el menú, elige Gestionar tu cuenta de Google.",
+   "audio": "vo/vo_04.mp3",
+   "from": 497,
+   "frames": 122,
+   "voiceSec": 3.7,
+   "words": [
+    {
+     "w": "En",
+     "s": 0.097,
+     "e": 0.262
+    },
+    {
+     "w": "el",
+     "s": 0.274,
+     "e": 0.38
+    },
+    {
+     "w": "menú",
+     "s": 0.392,
+     "e": 0.699
+    },
+    {
+     "w": "elige",
+     "s": 1.005,
+     "e": 1.371
+    },
+    {
+     "w": "Gestionar",
+     "s": 1.383,
+     "e": 1.89
+    },
+    {
+     "w": "tu",
+     "s": 1.901,
+     "e": 2.019
+    },
+    {
+     "w": "cuenta",
+     "s": 2.031,
+     "e": 2.338
+    },
+    {
+     "w": "de",
+     "s": 2.35,
+     "e": 2.456
+    },
+    {
+     "w": "Google",
+     "s": 2.467,
+     "e": 2.857
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "src": [
+    48,
+    63
+   ],
+   "chapter": "Paso 1",
+   "sub": "Abre el gestor",
+   "callout": "Seguridad → Gestor de contraseñas",
+   "text": "Ve a la pestaña Seguridad e inicio de sesión, baja un poco y abre el Gestor de contraseñas.",
+   "audio": "vo/vo_05.mp3",
+   "from": 619,
+   "frames": 190,
+   "voiceSec": 6.0,
+   "words": [
+    {
+     "w": "Ve",
+     "s": 0.097,
+     "e": 0.298
+    },
+    {
+     "w": "a",
+     "s": 0.309,
+     "e": 0.357
+    },
+    {
+     "w": "la",
+     "s": 0.368,
+     "e": 0.475
+    },
+    {
+     "w": "pestaña",
+     "s": 0.486,
+     "e": 0.911
+    },
+    {
+     "w": "Seguridad",
+     "s": 0.923,
+     "e": 1.442
+    },
+    {
+     "w": "e",
+     "s": 1.453,
+     "e": 1.489
+    },
+    {
+     "w": "inicio",
+     "s": 1.5,
+     "e": 1.901
+    },
+    {
+     "w": "de",
+     "s": 1.913,
+     "e": 1.996
+    },
+    {
+     "w": "sesión",
+     "s": 2.008,
+     "e": 2.42
+    },
+    {
+     "w": "baja",
+     "s": 2.703,
+     "e": 2.951
+    },
+    {
+     "w": "un",
+     "s": 2.963,
+     "e": 3.092
+    },
+    {
+     "w": "poco",
+     "s": 3.104,
+     "e": 3.446
+    },
+    {
+     "w": "y",
+     "s": 3.458,
+     "e": 3.576
+    },
+    {
+     "w": "abre",
+     "s": 3.588,
+     "e": 3.788
+    },
+    {
+     "w": "el",
+     "s": 3.8,
+     "e": 3.871
+    },
+    {
+     "w": "Gestor",
+     "s": 3.883,
+     "e": 4.26
+    },
+    {
+     "w": "de",
+     "s": 4.272,
+     "e": 4.354
+    },
+    {
+     "w": "contraseñas",
+     "s": 4.366,
+     "e": 5.18
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "src": [
+    63,
+    80
+   ],
+   "chapter": "Atajo",
+   "sub": "Más rápido desde Chrome",
+   "callout": "Menú de Chrome → Contraseñas",
+   "text": "Si tus datos están cifrados con una frase de contraseña, aquí no verás la lista. No pasa nada: usa el atajo del menú de Chrome y entra directo al gestor.",
+   "audio": "vo/vo_06.mp3",
+   "from": 809,
+   "frames": 316,
+   "voiceSec": 10.18,
+   "words": [
+    {
+     "w": "Si",
+     "s": 0.097,
+     "e": 0.333
+    },
+    {
+     "w": "tus",
+     "s": 0.345,
+     "e": 0.533
+    },
+    {
+     "w": "datos",
+     "s": 0.545,
+     "e": 0.84
+    },
+    {
+     "w": "están",
+     "s": 0.852,
+     "e": 1.123
+    },
+    {
+     "w": "cifrados",
+     "s": 1.135,
+     "e": 1.607
+    },
+    {
+     "w": "con",
+     "s": 1.618,
+     "e": 1.783
+    },
+    {
+     "w": "una",
+     "s": 1.795,
+     "e": 1.96
+    },
+    {
+     "w": "frase",
+     "s": 1.972,
+     "e": 2.267
+    },
+    {
+     "w": "de",
+     "s": 2.279,
+     "e": 2.373
+    },
+    {
+     "w": "contraseña",
+     "s": 2.385,
+     "e": 3.01
+    },
+    {
+     "w": "aquí",
+     "s": 3.258,
+     "e": 3.564
+    },
+    {
+     "w": "no",
+     "s": 3.576,
+     "e": 3.741
+    },
+    {
+     "w": "verás",
+     "s": 3.753,
+     "e": 4.071
+    },
+    {
+     "w": "la",
+     "s": 4.083,
+     "e": 4.154
+    },
+    {
+     "w": "lista",
+     "s": 4.166,
+     "e": 4.578
+    },
+    {
+     "w": "No",
+     "s": 5.389,
+     "e": 5.601
+    },
+    {
+     "w": "pasa",
+     "s": 5.613,
+     "e": 5.884
+    },
+    {
+     "w": "nada",
+     "s": 5.896,
+     "e": 6.215
+    },
+    {
+     "w": "usa",
+     "s": 6.521,
+     "e": 6.733
+    },
+    {
+     "w": "el",
+     "s": 6.745,
+     "e": 6.828
+    },
+    {
+     "w": "atajo",
+     "s": 6.84,
+     "e": 7.17
+    },
+    {
+     "w": "del",
+     "s": 7.182,
+     "e": 7.323
+    },
+    {
+     "w": "menú",
+     "s": 7.335,
+     "e": 7.571
+    },
+    {
+     "w": "de",
+     "s": 7.583,
+     "e": 7.689
+    },
+    {
+     "w": "Chrome",
+     "s": 7.7,
+     "e": 8.007
+    },
+    {
+     "w": "y",
+     "s": 8.019,
+     "e": 8.149
+    },
+    {
+     "w": "entra",
+     "s": 8.16,
+     "e": 8.384
+    },
+    {
+     "w": "directo",
+     "s": 8.396,
+     "e": 8.774
+    },
+    {
+     "w": "al",
+     "s": 8.785,
+     "e": 8.856
+    },
+    {
+     "w": "gestor",
+     "s": 8.868,
+     "e": 9.363
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "src": [
+    80,
+    84
+   ],
+   "chapter": "Paso 2",
+   "sub": "Revisa tus contraseñas",
+   "callout": "",
+   "text": "Y aquí está: la lista completa de tus contraseñas guardadas.",
+   "audio": "vo/vo_07.mp3",
+   "from": 1125,
+   "frames": 145,
+   "voiceSec": 4.49,
+   "words": [
+    {
+     "w": "Y",
+     "s": 0.097,
+     "e": 0.262
+    },
+    {
+     "w": "aquí",
+     "s": 0.274,
+     "e": 0.522
+    },
+    {
+     "w": "está",
+     "s": 0.533,
+     "e": 0.84
+    },
+    {
+     "w": "la",
+     "s": 1.147,
+     "e": 1.229
+    },
+    {
+     "w": "lista",
+     "s": 1.241,
+     "e": 1.559
+    },
+    {
+     "w": "completa",
+     "s": 1.571,
+     "e": 2.008
+    },
+    {
+     "w": "de",
+     "s": 2.019,
+     "e": 2.137
+    },
+    {
+     "w": "tus",
+     "s": 2.149,
+     "e": 2.326
+    },
+    {
+     "w": "contraseñas",
+     "s": 2.338,
+     "e": 2.998
+    },
+    {
+     "w": "guardadas",
+     "s": 3.01,
+     "e": 3.67
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "src": [
+    84,
+    100
+   ],
+   "chapter": "Paso 2",
+   "sub": "Revisa tus contraseñas",
+   "callout": "Revisión de contraseñas",
+   "text": "Arriba tienes la Revisión de contraseñas. Te avisa cuáles se filtraron, cuáles repites y cuáles son débiles. Empieza siempre por las filtradas.",
+   "audio": "vo/vo_08.mp3",
+   "from": 1270,
+   "frames": 322,
+   "voiceSec": 10.37,
+   "words": [
+    {
+     "w": "Arriba",
+     "s": 0.097,
+     "e": 0.51
+    },
+    {
+     "w": "tienes",
+     "s": 0.522,
+     "e": 0.875
+    },
+    {
+     "w": "la",
+     "s": 0.887,
+     "e": 0.97
+    },
+    {
+     "w": "Revisión",
+     "s": 0.982,
+     "e": 1.418
+    },
+    {
+     "w": "de",
+     "s": 1.43,
+     "e": 1.512
+    },
+    {
+     "w": "contraseñas",
+     "s": 1.524,
+     "e": 2.338
+    },
+    {
+     "w": "Te",
+     "s": 3.149,
+     "e": 3.243
+    },
+    {
+     "w": "avisa",
+     "s": 3.255,
+     "e": 3.573
+    },
+    {
+     "w": "cuáles",
+     "s": 3.585,
+     "e": 3.903
+    },
+    {
+     "w": "se",
+     "s": 3.915,
+     "e": 4.009
+    },
+    {
+     "w": "filtraron",
+     "s": 4.021,
+     "e": 4.564
+    },
+    {
+     "w": "cuáles",
+     "s": 4.835,
+     "e": 5.141
+    },
+    {
+     "w": "repites",
+     "s": 5.153,
+     "e": 5.625
+    },
+    {
+     "w": "y",
+     "s": 5.637,
+     "e": 5.696
+    },
+    {
+     "w": "cuáles",
+     "s": 5.708,
+     "e": 6.038
+    },
+    {
+     "w": "son",
+     "s": 6.05,
+     "e": 6.238
+    },
+    {
+     "w": "débiles",
+     "s": 6.25,
+     "e": 6.84
+    },
+    {
+     "w": "Empieza",
+     "s": 7.653,
+     "e": 8.149
+    },
+    {
+     "w": "siempre",
+     "s": 8.16,
+     "e": 8.538
+    },
+    {
+     "w": "por",
+     "s": 8.55,
+     "e": 8.703
+    },
+    {
+     "w": "las",
+     "s": 8.715,
+     "e": 8.844
+    },
+    {
+     "w": "filtradas",
+     "s": 8.856,
+     "e": 9.54
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "src": [
+    100,
+    110
+   ],
+   "chapter": "Paso 3",
+   "sub": "Ver o compartir",
+   "callout": "Mostrar contraseña",
+   "text": "Toca cualquier sitio para ver el usuario. Pulsa el ojo y verás la contraseña.",
+   "audio": "vo/vo_09.mp3",
+   "from": 1592,
+   "frames": 178,
+   "voiceSec": 5.59,
+   "words": [
+    {
+     "w": "Toca",
+     "s": 0.097,
+     "e": 0.345
+    },
+    {
+     "w": "cualquier",
+     "s": 0.357,
+     "e": 0.746
+    },
+    {
+     "w": "sitio",
+     "s": 0.758,
+     "e": 1.135
+    },
+    {
+     "w": "para",
+     "s": 1.147,
+     "e": 1.335
+    },
+    {
+     "w": "ver",
+     "s": 1.347,
+     "e": 1.512
+    },
+    {
+     "w": "el",
+     "s": 1.524,
+     "e": 1.607
+    },
+    {
+     "w": "usuario",
+     "s": 1.618,
+     "e": 2.114
+    },
+    {
+     "w": "Pulsa",
+     "s": 2.925,
+     "e": 3.243
+    },
+    {
+     "w": "el",
+     "s": 3.255,
+     "e": 3.349
+    },
+    {
+     "w": "ojo",
+     "s": 3.361,
+     "e": 3.608
+    },
+    {
+     "w": "y",
+     "s": 3.62,
+     "e": 3.679
+    },
+    {
+     "w": "verás",
+     "s": 3.691,
+     "e": 3.998
+    },
+    {
+     "w": "la",
+     "s": 4.009,
+     "e": 4.092
+    },
+    {
+     "w": "contraseña",
+     "s": 4.104,
+     "e": 4.776
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "src": [
+    110,
+    124
+   ],
+   "chapter": "Paso 3",
+   "sub": "Ver o compartir",
+   "callout": "Compartir",
+   "text": "Con el botón de compartir, envías una copia segura a alguien de tu grupo familiar.",
+   "audio": "vo/vo_10.mp3",
+   "from": 1770,
+   "frames": 170,
+   "voiceSec": 5.33,
+   "words": [
+    {
+     "w": "Con",
+     "s": 0.097,
+     "e": 0.274
+    },
+    {
+     "w": "el",
+     "s": 0.286,
+     "e": 0.38
+    },
+    {
+     "w": "botón",
+     "s": 0.392,
+     "e": 0.675
+    },
+    {
+     "w": "de",
+     "s": 0.687,
+     "e": 0.769
+    },
+    {
+     "w": "compartir",
+     "s": 0.781,
+     "e": 1.324
+    },
+    {
+     "w": "envías",
+     "s": 1.677,
+     "e": 2.067
+    },
+    {
+     "w": "una",
+     "s": 2.078,
+     "e": 2.232
+    },
+    {
+     "w": "copia",
+     "s": 2.243,
+     "e": 2.538
+    },
+    {
+     "w": "segura",
+     "s": 2.55,
+     "e": 2.975
+    },
+    {
+     "w": "a",
+     "s": 2.986,
+     "e": 3.033
+    },
+    {
+     "w": "alguien",
+     "s": 3.045,
+     "e": 3.34
+    },
+    {
+     "w": "de",
+     "s": 3.352,
+     "e": 3.458
+    },
+    {
+     "w": "tu",
+     "s": 3.47,
+     "e": 3.588
+    },
+    {
+     "w": "grupo",
+     "s": 3.6,
+     "e": 3.918
+    },
+    {
+     "w": "familiar",
+     "s": 3.93,
+     "e": 4.496
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "src": [
+    124,
+    139
+   ],
+   "chapter": "Paso 3",
+   "sub": "Ver o compartir",
+   "callout": "Añadir contraseña",
+   "text": "¿Te falta alguna? Toca Añadir contraseña, escribe el sitio, el usuario y la contraseña, y guárdala.",
+   "audio": "vo/vo_11.mp3",
+   "from": 1940,
+   "frames": 240,
+   "voiceSec": 7.66,
+   "words": [
+    {
+     "w": "Te",
+     "s": 0.097,
+     "e": 0.215
+    },
+    {
+     "w": "falta",
+     "s": 0.227,
+     "e": 0.533
+    },
+    {
+     "w": "alguna",
+     "s": 0.545,
+     "e": 0.97
+    },
+    {
+     "w": "Toca",
+     "s": 1.781,
+     "e": 2.04
+    },
+    {
+     "w": "Añadir",
+     "s": 2.052,
+     "e": 2.429
+    },
+    {
+     "w": "contraseña",
+     "s": 2.441,
+     "e": 3.101
+    },
+    {
+     "w": "escribe",
+     "s": 3.337,
+     "e": 3.774
+    },
+    {
+     "w": "el",
+     "s": 3.785,
+     "e": 3.88
+    },
+    {
+     "w": "sitio",
+     "s": 3.892,
+     "e": 4.316
+    },
+    {
+     "w": "el",
+     "s": 4.54,
+     "e": 4.693
+    },
+    {
+     "w": "usuario",
+     "s": 4.705,
+     "e": 5.153
+    },
+    {
+     "w": "y",
+     "s": 5.165,
+     "e": 5.212
+    },
+    {
+     "w": "la",
+     "s": 5.224,
+     "e": 5.33
+    },
+    {
+     "w": "contraseña",
+     "s": 5.342,
+     "e": 6.002
+    },
+    {
+     "w": "y",
+     "s": 6.226,
+     "e": 6.285
+    },
+    {
+     "w": "guárdala",
+     "s": 6.297,
+     "e": 6.84
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "src": [
+    139,
+    162
+   ],
+   "chapter": "Paso 4",
+   "sub": "Ajustes",
+   "callout": "Activar autocompletar",
+   "text": "En los ajustes, activa el autocompletado. Así Chrome rellena tus contraseñas por ti, en webs y también en apps.",
+   "audio": "vo/vo_12.mp3",
+   "from": 2180,
+   "frames": 255,
+   "voiceSec": 8.14,
+   "words": [
+    {
+     "w": "En",
+     "s": 0.097,
+     "e": 0.262
+    },
+    {
+     "w": "los",
+     "s": 0.274,
+     "e": 0.416
+    },
+    {
+     "w": "ajustes",
+     "s": 0.427,
+     "e": 0.982
+    },
+    {
+     "w": "activa",
+     "s": 1.194,
+     "e": 1.595
+    },
+    {
+     "w": "el",
+     "s": 1.607,
+     "e": 1.689
+    },
+    {
+     "w": "autocompletado",
+     "s": 1.701,
+     "e": 2.55
+    },
+    {
+     "w": "Así",
+     "s": 3.361,
+     "e": 3.691
+    },
+    {
+     "w": "Chrome",
+     "s": 3.703,
+     "e": 3.962
+    },
+    {
+     "w": "rellena",
+     "s": 3.974,
+     "e": 4.351
+    },
+    {
+     "w": "tus",
+     "s": 4.363,
+     "e": 4.552
+    },
+    {
+     "w": "contraseñas",
+     "s": 4.564,
+     "e": 5.212
+    },
+    {
+     "w": "por",
+     "s": 5.224,
+     "e": 5.413
+    },
+    {
+     "w": "ti",
+     "s": 5.425,
+     "e": 5.637
+    },
+    {
+     "w": "en",
+     "s": 5.849,
+     "e": 5.967
+    },
+    {
+     "w": "webs",
+     "s": 5.979,
+     "e": 6.321
+    },
+    {
+     "w": "y",
+     "s": 6.333,
+     "e": 6.403
+    },
+    {
+     "w": "también",
+     "s": 6.415,
+     "e": 6.792
+    },
+    {
+     "w": "en",
+     "s": 6.804,
+     "e": 6.922
+    },
+    {
+     "w": "apps",
+     "s": 6.934,
+     "e": 7.311
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "src": [
+    162,
+    172
+   ],
+   "chapter": "Paso 4",
+   "sub": "Ajustes",
+   "callout": "Exportar datos",
+   "text": "Con Exportar datos, puedes llevarlas a otra app, por ejemplo a Contraseñas del iPhone.",
+   "audio": "vo/vo_13.mp3",
+   "from": 2435,
+   "frames": 179,
+   "voiceSec": 5.62,
+   "words": [
+    {
+     "w": "Con",
+     "s": 0.097,
+     "e": 0.239
+    },
+    {
+     "w": "Exportar",
+     "s": 0.25,
+     "e": 0.769
+    },
+    {
+     "w": "datos",
+     "s": 0.781,
+     "e": 1.194
+    },
+    {
+     "w": "puedes",
+     "s": 1.418,
+     "e": 1.689
+    },
+    {
+     "w": "llevarlas",
+     "s": 1.701,
+     "e": 2.161
+    },
+    {
+     "w": "a",
+     "s": 2.173,
+     "e": 2.267
+    },
+    {
+     "w": "otra",
+     "s": 2.279,
+     "e": 2.609
+    },
+    {
+     "w": "app",
+     "s": 2.621,
+     "e": 2.798
+    },
+    {
+     "w": "por",
+     "s": 3.034,
+     "e": 3.163
+    },
+    {
+     "w": "ejemplo",
+     "s": 3.175,
+     "e": 3.529
+    },
+    {
+     "w": "a",
+     "s": 3.541,
+     "e": 3.576
+    },
+    {
+     "w": "Contraseñas",
+     "s": 3.588,
+     "e": 4.236
+    },
+    {
+     "w": "del",
+     "s": 4.248,
+     "e": 4.39
+    },
+    {
+     "w": "iPhone",
+     "s": 4.401,
+     "e": 4.802
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "src": [
+    172,
+    188
+   ],
+   "chapter": "Paso 4",
+   "sub": "Ajustes",
+   "callout": "Cambiar PIN",
+   "text": "Aquí también puedes cambiar el PIN de tu gestor de contraseñas.",
+   "audio": "vo/vo_14.mp3",
+   "from": 2614,
+   "frames": 133,
+   "voiceSec": 4.1,
+   "words": [
+    {
+     "w": "Aquí",
+     "s": 0.097,
+     "e": 0.38
+    },
+    {
+     "w": "también",
+     "s": 0.392,
+     "e": 0.746
+    },
+    {
+     "w": "puedes",
+     "s": 0.758,
+     "e": 1.064
+    },
+    {
+     "w": "cambiar",
+     "s": 1.076,
+     "e": 1.43
+    },
+    {
+     "w": "el",
+     "s": 1.442,
+     "e": 1.548
+    },
+    {
+     "w": "PIN",
+     "s": 1.559,
+     "e": 1.748
+    },
+    {
+     "w": "de",
+     "s": 1.76,
+     "e": 1.866
+    },
+    {
+     "w": "tu",
+     "s": 1.878,
+     "e": 1.972
+    },
+    {
+     "w": "gestor",
+     "s": 1.984,
+     "e": 2.361
+    },
+    {
+     "w": "de",
+     "s": 2.373,
+     "e": 2.456
+    },
+    {
+     "w": "contraseñas",
+     "s": 2.467,
+     "e": 3.269
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "src": [
+    188,
+    207
+   ],
+   "chapter": "Paso 4",
+   "sub": "Ajustes",
+   "callout": "Eliminar todos los datos",
+   "text": "Y si quieres empezar de cero, Eliminar todos los datos borra todo. Cuidado, no se puede deshacer. En Android funciona igual. ¡Suscríbete para más trucos!",
+   "audio": "vo/vo_15.mp3",
+   "from": 2747,
+   "frames": 375,
+   "voiceSec": 12.14,
+   "words": [
+    {
+     "w": "Y",
+     "s": 0.097,
+     "e": 0.203
+    },
+    {
+     "w": "si",
+     "s": 0.215,
+     "e": 0.368
+    },
+    {
+     "w": "quieres",
+     "s": 0.38,
+     "e": 0.71
+    },
+    {
+     "w": "empezar",
+     "s": 0.722,
+     "e": 1.147
+    },
+    {
+     "w": "de",
+     "s": 1.159,
+     "e": 1.241
+    },
+    {
+     "w": "cero",
+     "s": 1.253,
+     "e": 1.607
+    },
+    {
+     "w": "Eliminar",
+     "s": 1.842,
+     "e": 2.397
+    },
+    {
+     "w": "todos",
+     "s": 2.409,
+     "e": 2.774
+    },
+    {
+     "w": "los",
+     "s": 2.786,
+     "e": 2.927
+    },
+    {
+     "w": "datos",
+     "s": 2.939,
+     "e": 3.281
+    },
+    {
+     "w": "borra",
+     "s": 3.293,
+     "e": 3.564
+    },
+    {
+     "w": "todo",
+     "s": 3.576,
+     "e": 3.965
+    },
+    {
+     "w": "Cuidado",
+     "s": 4.776,
+     "e": 5.236
+    },
+    {
+     "w": "no",
+     "s": 5.519,
+     "e": 5.637
+    },
+    {
+     "w": "se",
+     "s": 5.649,
+     "e": 5.79
+    },
+    {
+     "w": "puede",
+     "s": 5.802,
+     "e": 6.038
+    },
+    {
+     "w": "deshacer",
+     "s": 6.05,
+     "e": 6.604
+    },
+    {
+     "w": "En",
+     "s": 7.417,
+     "e": 7.606
+    },
+    {
+     "w": "Android",
+     "s": 7.618,
+     "e": 7.983
+    },
+    {
+     "w": "funciona",
+     "s": 7.995,
+     "e": 8.455
+    },
+    {
+     "w": "igual",
+     "s": 8.467,
+     "e": 8.856
+    },
+    {
+     "w": "Suscríbete",
+     "s": 9.67,
+     "e": 10.342
+    },
+    {
+     "w": "para",
+     "s": 10.354,
+     "e": 10.542
+    },
+    {
+     "w": "más",
+     "s": 10.554,
+     "e": 10.79
+    },
+    {
+     "w": "trucos",
+     "s": 10.802,
+     "e": 11.321
+    }
+   ]
+  }
+ ]
+}

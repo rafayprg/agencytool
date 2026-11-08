@@ -1,0 +1,3 @@
+{"id": "mono-minimal", "name": "Mono Minimal", "description": "Black and white with one green accent, no music, no grid.",
+ "colors": {"bg1": "#0b0b0b", "bg2": "#1c1c1c", "accent": "#39ff88", "accent2": "#3a3a3a", "text": "#f5f5f5"},
+ "font": "'Trebuchet MS', 'Segoe UI', sans-serif", "captionScale": 0.95, "layout": "phone-right", "grid": false, "music": false, "musicVolume": 0}

@@ -1,0 +1,3 @@
+{"id": "bold-pop", "name": "Bold Pop", "description": "Purple and hot pink, heavy captions, phone on the left — punchy social style.",
+ "colors": {"bg1": "#2a0845", "bg2": "#6441a5", "accent": "#ff3d81", "accent2": "#00e0c6", "text": "#ffffff"},
+ "font": "'Arial Black', 'Segoe UI Black', Impact, sans-serif", "captionScale": 1.12, "layout": "phone-left", "grid": true, "music": true, "musicVolume": 0.08}

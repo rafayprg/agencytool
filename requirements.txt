@@ -1,0 +1,15 @@
+# Media Agency Studio — Python deps (Python 3.12)
+fastapi==0.115.6
+uvicorn==0.34.0
+python-multipart==0.0.20
+httpx==0.28.1
+yt-dlp
+edge-tts==7.2.3
+imageio-ffmpeg==0.6.0
+numpy<2.3
+pillow==11.1.0
+deep-translator==1.11.4
+gdown==5.2.0
+faster-whisper==1.1.1
+ctranslate2==4.4.0
+setuptools<70

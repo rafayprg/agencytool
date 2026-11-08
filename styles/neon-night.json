@@ -1,0 +1,3 @@
+{"id": "neon-night", "name": "Neon Night", "description": "Dark blue gradient, yellow highlights, phone on the right (the approved first remake).",
+ "colors": {"bg1": "#0a0f1f", "bg2": "#1b1446", "accent": "#ffd23f", "accent2": "#5b8cff", "text": "#ffffff"},
+ "font": "'Segoe UI', 'Helvetica Neue', Arial, sans-serif", "captionScale": 1, "layout": "phone-right", "grid": true, "music": true, "musicVolume": 0.07}

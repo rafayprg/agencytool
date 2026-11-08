@@ -1,0 +1,3 @@
+{"id": "clean-light", "name": "Clean Light", "description": "Bright white studio look, blue highlights, calm and professional.",
+ "colors": {"bg1": "#eef2f8", "bg2": "#ffffff", "accent": "#1f6bff", "accent2": "#ff7a1a", "text": "#101828"},
+ "font": "'Segoe UI', Arial, sans-serif", "captionScale": 1, "layout": "phone-right", "grid": false, "music": true, "musicVolume": 0.05}
